@@ -6,3 +6,16 @@ body{
 main{
     flex-grow: 1;
 }
+
+.imagenesCarousel{
+    height: 450px;
+    object-fit: cover;
+}
+
+/*dispositivos md*/
+@media screen and (min-width:768px) and (max-width:991px) {
+    .imagenesCarousel{
+        height: 750px;
+        
+    }
+}
