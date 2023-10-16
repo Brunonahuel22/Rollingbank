@@ -20,3 +20,8 @@ main{
         
     }
 }
+
+/*DIV DE CARDS*/
+.divDeCards .card{
+   box-shadow: 3px 3px 7px;
+}
