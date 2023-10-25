@@ -1,12 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
     <title>Rolling bank</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">RollingBank</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/quienesSomos.html"
+                  >Quienes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/seguridad.html">Seguridad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/error404.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--SECCION DE CAROUSEL-->
+      <section>
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/banner/bitcoin.jpg"
+                class="d-block w-100 imagenesCarousel"
+                alt="imagen de moneda bitcoin"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/cajero.jpg"
+                class="d-block w-100 imagenesCarousel"
+                alt="imagen de hmbre ingresando su tarjeta a un cajero automatica"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/dolar.jpg"
+                class="d-block w-100 imagenesCarousel"
+                alt="imagen de dolar"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--SECCION PARA LAS 3 CARDS-->
+      <section class="divDeCards container">
+        <div class="container-fluid row justify-content-around text-center">
+          <div class="card col-md-5 col-lg-3 my-3">
+            <div class="card-body">
+              <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
+              <h3>Sin Sorpresas</h3>
+              <p>Somos transparentes, no vas a encontrar letra chica</p>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 my-3">
+            <div class="card-body">
+              <i class="bi bi-emoji-sunglasses fs-1 text-primary"></i>
+              <h3>Aprobado</h3>
+              <p>Estamos autorizados y regulados por el Banco Central</p>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 my-3">
+            <div class="card-body">
+              <i class="bi bi-currency-dollar fs-1 text-success"></i>
+              <h3>Sin costos</h3>
+              <p>Todas tus operaciones diaria estan incluidas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row col-lg-12">
+        <div class="col-lg-5 col-md-12 text-center">
+          <img
+            src="img/iphone-illustration-sec.png"
+            alt="imagen de celular de iphone"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="col-sm-12 col-lg-7 col-md-12 pt-5 row">
+          <article class="text-center align-items-center">
+            <h3>Tu seguridad como proriedad</h3>
+            <p class="lead">
+              Seguimos las mejores prácticas en cyberseguridad sin complicarte
+              tu operacion diaria.
+            </p>
+          </article>
+
+          <article class="text-center col-lg-6">
+            <i class="bi bi-eye-fill fs-1 text-danger"></i>
+            <h3>Biometría</h3>
+            <p>
+              Nuestra tecnologia te permite acceder a tu cuenta usando tu huella
+              digital o tu cara
+            </p>
+          </article>
+
+          <article class="text-center col-lg-6">
+            <i class="bi bi-exclamation-circle fs-1 text-primary"></i>
+            <h3>Segundo factor</h3>
+            <p>
+              Usamos un Token invisible para todas las operaciones que hagas
+            </p>
+          </article>
+
+          <article class="text-center col-lg-6">
+            <i class="bi bi-headphones fs-1 text-primary"></i>
+            <h3>Personal</h3>
+            <p>
+              Vas a poder ingresar desde un dispositivo a la vez a tu cuenta
+            </p>
+          </article>
+
+          <article class="text-center col-lg-6">
+            <i class="bi bi-robot fs-1 text-success"></i>
+            <h3>100% encriptado</h3>
+            <p>
+              Usamos un Token invisible para todas las operaciones que hagas
+              Todas las transacciones son encriptadas para tu mayor seguridad
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="container-fluid text-center bg-primary text-bg-primary py-4"
+      >
+        <h3 class="display-3">RollingBank te esta esperando</h3>
+        <p>
+          Bajá la app y vivi una nueva experiencia. Empeza creando tu cuenta
+          solo con tu DNI.
+        </p>
+        <img
+          src="img/google-play-badge-bb.svg"
+          alt="imagen de logo de google play"
+        />
+        <img
+          src="img/badge-apple-store.svg"
+          alt="imagen de logo apple store"
+          class="mb-1"
+        />
+      </section>
+    </main>
+
+    <footer class="container-fluid bg-black">
+      <div><h4 class="text-secondary my-4 ms-3">RollingBank</h4></div>
+      <div class="row justify-content-around">
+        <div class="col-md-5 col-lg-2 container-fluid text-center">
+          <h5 class="text-secondary">Navegacion</h5>
+          <ul class="list-unstyled">
+            <li><a href="" class="link-secondary">¿Quienes somos?</a></li>
+            <li><a href="" class="link-secondary">Precios</a></li>
+            <li><a href="" class="link-secondary">Seguridad</a></li>
+            <li><a href="" class="link-secondary">ayuda</a></li>
+            <li><a href="" class="link-secondary">Robo o extravio</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-lg-2 container text-center">
+          <h5 class="text-secondary">Legales</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="" class="link-secondary">Regimen de transparencia</a>
+            </li>
+            <li><a href="" class="link-secondary">Usuario Bancario</a></li>
+            <li><a href="" class="link-secondary">Conducta Bancaria</a></li>
+            <li><a href="" class="link-secondary">Estados contables</a></li>
+            <li><a href="" class="link-secondary">Termino y condiciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-lg-2 container text-center">
+          <img
+            class="img-fluid mb-3"
+            src="img/usuariosfinancieros.png"
+            alt="Imagen de usuarios financieros"
+          />
+        </div>
+        <div class="col-md-5 col-lg-2 container text-center">
+          <h5 class="text-secondary mb-1">Unite</h5>
+          <img
+            src="img/google-play-badge-bb.svg"
+            alt="imagen de logo de google play"
+            class="mb-2"
+          />
+          <img
+            src="img/badge-apple-store.svg"
+            alt="imagen de logo apple store"
+            class="mb-3"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
